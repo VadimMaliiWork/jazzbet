@@ -1,0 +1,223 @@
+$font-title: "Dela Gothic One", sans-serif;
+$font-base: "Roboto", sans-serif;
+$c-bg: #2B2636;
+$btn-bg: #453E51;
+$c-title: #F7F4FB;
+$c-text: #F7F4FB;
+$c-label: #A29FA7;
+$c-input: #757080;
+$c-dark: #2B2636;
+
+$c-active-bg: #8138E0;
+$c-yellow: #FFD014;
+$c-h-yellow: #ffd93d;
+
+$c-green: #14ff72;
+$c-d-green: #14FF7249;
+
+$container-max: 1170px;
+$btn-radius: 12px;
+$btn-padding: 19px 17px;
+
+$modal-radius: 37px;
+$modal-padding: 18px 16px;
+$modal-width: 846px;
+$modal-bg: #2B2636;
+
+$radius-xs: 4px;
+
+$input-padding: 15px 21px;
+
+$text-size: 16px;
+
+html, body{
+  font-family: $font-base;
+  margin: 0;
+  padding: 0;
+  background: #16131D;
+  color: $c-text;
+  font-size: $text-size;
+}
+
+div, p, form, input, a, span, button, textarea, select{
+  font-family: $font-base;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.jc-between{
+  justify-content: space-between;
+}
+
+.fd-colum{
+  flex-direction: column;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: right;
+}
+
+
+.fd-row{
+  flex-direction: row;
+}
+
+
+input, textarea{
+  &:focus{
+    outline: none;
+  }
+}
+
+button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-title;
+  font-weight: 400;
+  font-style: normal;
+  color: #F7F4FB;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+h3{
+  font-size: 24px;
+}
+
+p{
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  &:hover {
+    color: $c-text;
+    transition: all .3s ease-in-out;
+  }
+}
+
+
+ul,li{
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0;
+}
+
+.container {
+  max-width: $container-max;
+}
+
+.btn{
+  padding: $modal-padding;
+  background: $btn-bg;
+  width: 100%;
+  border-radius: $btn-radius;
+  color: $c-text;
+  cursor: pointer;
+  &:hover{
+    background: $c-active-bg;
+  }
+  &.active{
+    background: $c-active-bg;
+  }
+  &__secondary{
+    background: $c-yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $c-dark;
+    width: 100%;
+    transition: all .3s ease-in-out;
+    &:hover{
+      background: $c-h-yellow;
+      transition: all .3s ease-in-out;
+    }
+  }
+}
+
+input, .input{
+  border: 1px solid$btn-bg;
+  border-radius: $btn-radius;
+  padding: $input-padding;
+  background: transparent;
+  font-size: $text-size;
+  width: 100%;
+  color: $c-text;
+  &::placeholder{
+    color: $c-input;
+  }
+}
+
+.input{
+  &.hint-text{
+    color: $c-input;
+  }
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  user-select: none;
+  &__input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  &__box {
+    width: 20px;
+    height: 20px;
+    border-radius:4px;
+    background: rgba($c-active-bg, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+    color: transparent;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__label {
+    font-size: $text-size;
+    color: $c-text;
+  }
+
+  &__input:checked + &__box {
+    background: $c-active-bg;
+    color: #fff;
+    transform: scale(0.98);
+  }
+
+  &:hover .checkbox__box {
+    background: rgba($c-active-bg, 0.4);
+  }
+  &__input:focus-visible + &__box {
+    outline: 2px solid $c-active-bg;
+    outline-offset: 3px;
+  }
+}
+

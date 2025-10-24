@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="noindex">
+    <title>Jezzbet</title>
+    <meta name="description" content="Jezzbet">
+    <meta name="title" content="Jezzbet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+<header class="header" id="header"></header>
+<section class="modal" id="modalBalance">
+    <div class="modal__header d-flex align-center jc-between">
+        <h3 class="modal__title">Top Up Balance</h3>
+        <button class="close model__close d-flex align-center jc-between" type="button">
+            <img src="assets/img/close.svg" alt="Close">
+        </button>
+    </div>
+    <div class="modal__body d-flex">
+        <div class="modal__methods">
+            <div class="modal__subtitle">
+                Deposit Method
+            </div>
+            <ul class="modal__tabs tabs d-flex fd-colum" role="tablist">
+                <li class="tabs__item"
+                    role="tab"
+                >
+                    <a href="#"
+                       class="tabs__link active"
+                       data-tab="cards"
+                    >Cards</a>
+                </li>
+                <li class="tabs__item"
+                    role="tab"
+                >
+                    <a href="#"
+                       class="tabs__link"
+                       data-tab="bank"
+                    >Bank Transfer</a>
+                </li>
+                <li class="tabs__item"
+                    role="tab"
+                >
+                    <a href="#"
+                       class="tabs__link"
+                       data-tab="crypto"
+                    >Crypto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="modal__details" data-pay-details>
+            <div class="modal__subtitle">
+                Details
+            </div>
+            <div class="modal__content" data-content="cards">
+                <div class="details">
+                    <div class="details__amount">
+                        <div class="details__label d-flex jc-between">
+                            <span>
+                                Amount €
+                            </span>
+                            <span>
+                                From €10 to €49,999
+                            </span>
+                        </div>
+
+                        <div class="details__input">
+                            <input type="text" value="10">
+                            <div class="details__quick d-flex align-center">
+                                <a href="#" class="details__quick_btn">
+                                    +20
+                                </a>
+                                <a href="#" class="details__quick_btn">
+                                    +50
+                                </a>
+                                <a href="#" class="details__quick_btn">
+                                    +100
+                                </a>
+                                <a href="#" class="details__quick_btn">
+                                    +500
+                                </a>
+                            </div>
+                            <div class="details__extra">Bonus €10</div>
+
+                        </div>
+
+                        <div class="details__saved-cards d-flex jc-between">
+                            <div class="details__saved-cards_item saved">
+                                <div class="saved__header d-flex">
+                                    <img
+                                            src="assets/img/mscard.png"
+                                            alt="Mastercard"
+                                            class="payment-method__icon"
+
+                                    />
+                                    <span class="saved__number">•••• 1747</span>
+                                    <button class="saved__menu" aria-label="More options">⋮</button>
+                                </div>
+
+                                <div class="saved__footer">
+                                    <span class="saved__expire">Expires 09/2026</span>
+                                </div>
+                            </div>
+                            <div class="details__saved-cards_item saved">
+                                <div class="saved__header d-flex  ">
+                                    <img
+                                            src="assets/img/mscard.png"
+                                            alt="Mastercard"
+                                            class="payment-method__icon"
+
+                                    />
+                                    <span class="saved__number">•••• 1747</span>
+                                    <button class="saved__menu" aria-label="More options">⋮</button>
+                                </div>
+
+                                <div class="saved__footer">
+                                    <span class="saved__expire">Expires 09/2026</span>
+                                </div>
+                            </div>
+                            <div class="details__saved-cards_item saved">
+                                <div class="saved__header d-flex">
+                                    <img
+                                            src="assets/img/mscard.png"
+                                            alt="Mastercard"
+                                            class="payment-method__icon"
+
+                                    />
+                                    <span class="saved__number">•••• 1747</span>
+                                    <button class="saved__menu" aria-label="More options">⋮</button>
+                                </div>
+
+                                <div class="saved__footer">
+                                    <span class="saved__expire">Expires 09/2026</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="details__cards bank__details">
+                            <input type="text" value="" placeholder="Account Holder Name">
+                            <div class="details__cards_details d-flex">
+                                <input type="text" value="" placeholder="IBAN">
+                                <input type="text" value="" placeholder="SWIFT/BIC">
+                            </div>
+
+                            <label class="checkbox">
+                                <input class="checkbox__input" type="checkbox" />
+                                <span class="checkbox__box">
+                                <svg class="checkbox__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path
+                                          d="M20.285 6.709a1 1 0 00-1.414-1.418l-9.17 9.168-4.243-4.242a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l9.828-9.828z"
+                                          fill="currentColor"
+                                  />
+                                </svg>
+                              </span>
+                                <span class="checkbox__label">Save Bank Details</span>
+                            </label>
+                            <div class="btn btn__secondary">
+                                Deposit €10
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal__content" data-content="bank" hidden>
+               <div class="details">
+                   <div class="details__amount">
+                       <div class="details__label text-right">
+                           From €10 to €49,999
+                       </div>
+
+                       <div class="details__input">
+                           <input type="text" value="10">
+                           <div class="details__quick d-flex align-center">
+                               <a href="#" class="details__quick_btn">
+                                   +20
+                               </a>
+                               <a href="#" class="details__quick_btn">
+                                   +50
+                               </a>
+                               <a href="#" class="details__quick_btn">
+                                   +100
+                               </a>
+                               <a href="#" class="details__quick_btn">
+                                   +500
+                               </a>
+                           </div>
+                           <div class="details__extra">Bonus €10</div>
+
+                       </div>
+                       <div class="details__cards bank__details">
+                           <div class="details__value">
+                               Your Bank Details (Optional)
+                           </div>
+                           <input type="text" value="" placeholder="Account Holder Name">
+                           <div class="details__cards_details d-flex">
+                               <input type="text" value="" placeholder="IBAN">
+                               <input type="text" value="" placeholder="SWIFT/BIC">
+                           </div>
+
+                           <label class="checkbox">
+                               <input class="checkbox__input" type="checkbox" />
+                               <span class="checkbox__box">
+                                <svg class="checkbox__icon" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path
+                                          d="M20.285 6.709a1 1 0 00-1.414-1.418l-9.17 9.168-4.243-4.242a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l9.828-9.828z"
+                                          fill="currentColor"
+                                  />
+                                </svg>
+                              </span>
+                               <span class="checkbox__label">Save Bank Details</span>
+                           </label>
+                           <div class="btn btn__secondary">
+                               Deposit €10
+                           </div>
+                           <div class="details__info">
+                               The funds will be credited to your account within 1-3 business days.
+                           </div>
+                       </div>
+
+                    </div>
+               </div>
+
+            </div>
+            <div class="modal__content" data-content="crypto" hidden>
+                <div class="details">
+                    <div class="details__row d-flex">
+                        <div class="qr">
+                            <img src="assets/img/qr.png" alt="USDT TRC20 QR code">
+                        </div>
+                        <div class="details__amount amount">
+                            <div class="details__label">
+                                Amount
+                            </div>
+                            <div class="details__value input">
+                                20 USDT (TRC20)
+                                <span class="amount__time">9:59</span>
+                            </div>
+                            <div class="details__info">Exchange rate: € 1 = 1.0852 USDT</div>
+                            <div class="details__result">You will receive: ≈ € 18.43</div>
+                        </div>
+                    </div>
+
+                    <div class="details__address address">
+                        <div class="details__value input hint-text">
+                            TF5azgimc4mfqexuo9ZhoLRqY2rXwcE84R
+                        </div>
+                        <div class="details__info">Send only USDT (TRC20) to this address. Sending any other currency or network will result in loss of funds.</div>
+                     </div>
+                    <div class="details__status status">
+                        <div class="details__value input hint-text">
+                            Status: <span class="status__current">Awaiting Payment</span>
+                        </div>
+                        <div class="details__info">
+                            Funds will be credited after 1–3 network confirmations
+                        </div>
+                    </div>
+                    <div class="btn btn__secondary">
+                        Back
+                    </div>
+                    <div class="details__info">
+                        The exchange rate is fixed for 10 minutes
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer" id="footer"></footer>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
