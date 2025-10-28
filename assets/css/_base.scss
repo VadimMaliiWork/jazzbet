@@ -39,6 +39,10 @@ html, body{
   font-size: $text-size;
 }
 
+section{
+  box-sizing: border-box;
+}
+
 div, p, form, input, a, span, button, textarea, select{
   font-family: $font-base;
   box-sizing: border-box;
@@ -165,6 +169,9 @@ input, .input{
   color: $c-text;
   &::placeholder{
     color: $c-input;
+  }
+  &:focus{
+    border: 1px solid$c-active-bg;
   }
 }
 

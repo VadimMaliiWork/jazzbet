@@ -7,6 +7,10 @@ html, body {
   font-size: 16px;
 }
 
+section {
+  box-sizing: border-box;
+}
+
 div, p, form, input, a, span, button, textarea, select {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -129,6 +133,9 @@ input, .input {
 input::placeholder, .input::placeholder {
   color: #757080;
 }
+input:focus, .input:focus {
+  border: 1px solid #8138E0;
+}
 
 .input.hint-text {
   color: #757080;
@@ -201,7 +208,7 @@ input::placeholder, .input::placeholder {
   font-size: 18px;
 }
 .modal__methods {
-  width: 270px;
+  width: 33%;
   flex-shrink: 0;
 }
 .modal__body {
@@ -238,6 +245,7 @@ input::placeholder, .input::placeholder {
 }
 .tabs li a.active {
   background: #8138E0;
+  transform: scale(0.96);
 }
 
 .details__row {
@@ -353,9 +361,63 @@ input::placeholder, .input::placeholder {
 /*1024-1100px*/
 /*992-1024px*/
 /*768-992px*/
+@media screen and (max-width: 992px) {
+  .modal {
+    max-width: 100%;
+    margin: 0 15px;
+  }
+}
 /*768-820px*/
 /*576-768px*/
 /*320-576px*/
+@media screen and (max-width: 576px) {
+  .header {
+    margin-bottom: 0;
+  }
+  .tabs li {
+    width: 33%;
+  }
+  .tabs li a {
+    padding: 14px 6px;
+    text-align: center;
+  }
+  .tabs li a.active {
+    transform: scale(0.9);
+  }
+  .modal {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+  .modal__methods {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .modal__subtitle {
+    display: none;
+  }
+  .modal__body {
+    flex-direction: column;
+  }
+  .tabs {
+    flex-direction: row;
+  }
+  .details__row {
+    flex-direction: column;
+  }
+  .details__row .qr {
+    margin: 5px auto;
+  }
+  .details__saved-cards_item {
+    padding: 12px 8px;
+    width: 50%;
+  }
+  .details__saved-cards_item:last-child {
+    display: none;
+  }
+}
 /* ~ -320px*/
 
 /*# sourceMappingURL=main.css.map */

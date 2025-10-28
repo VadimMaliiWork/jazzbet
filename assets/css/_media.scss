@@ -11,7 +11,10 @@
 
 /*768-992px*/
 @media screen and (max-width: 992px){
-
+  .modal{
+    max-width: 100%;
+    margin: 0 15px;
+  }
 }
 
 /*768-820px*/
@@ -28,6 +31,56 @@
 
 /*320-576px*/
 @media screen and (max-width: 576px){
+  .header{
+    margin-bottom: 0;
+  }
+  .tabs{
+    li{
+      width: 33%;
+      a{
+        padding: 14px 6px;
+        text-align: center;
+        &.active{
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+  .modal{
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    &__methods{
+      width: 100%;
+      flex-shrink: 0;
+    }
+    &__subtitle{
+      display: none;
+    }
+    &__body{
+     flex-direction: column;
+    }
+  }
+  .tabs{
+    flex-direction: row;
+  }
+  .details{
+    &__row{
+      flex-direction: column;
+      .qr{
+        margin: 5px auto;
+      }
+    }
+    &__saved-cards_item{
+      padding: 12px 8px;
+      width: 50%;
+      &:last-child{
+        display: none;
+      }
+    }
+  }
 
 }
 
